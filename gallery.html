@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>GALLERY - ABC RUBIKS</title>
+
+	<meta name="viewport" content="width=960" />	
+	
+	<link rel="stylesheet" media="all" href="data/styles/reset.css">
+	<link rel="stylesheet" media="all" href="data/styles/main.css">
+
+	<script type="text/javascript" src="data/scripts/jquery-1.10.2.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="data/scripts/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="data/styles/jquery.fancybox.css?v=2.1.5" media="screen" />
+</head>
+
+<body>
+
+	<nav>
+		<ul>
+			<li><a href="about.html">About</a></li>
+			<li><a href="type-specimen.html">Type Specimen</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="credits.html">Credits</a></li>
+			<li class="active"><a href="gallery.html">Gallery</a></li>
+			<!-- <li><a href=""><img src="data/images/twitter.gif" alt="Twitter" /></a></li>
+			<li><a href=""><img src="data/images/facebook.gif" alt="Facebook" /></a></li> -->
+		</ul>
+		<a id="sendYourMessageButton" href="index.html" class="submit grey">Back To Message</a>
+	</nav>
+
+	<div class="wrapper">
+		<img src="data/images/gallery.gif" alt="Gallery" class="header" />
+
+		<ul id="gallery">
+			<li><a class="fancybox" href="data/images/gallery/1_b.jpg" data-fancybox-group="gallery" title=""><img src="data/images/gallery/1_s.jpg" alt="" /></a></li>
+
+			<li><a class="fancybox" href="data/images/gallery/2_b.jpg" data-fancybox-group="gallery" title=""><img src="data/images/gallery/2_s.jpg" alt="" /></a></li>
+
+			<li><a class="fancybox" href="data/images/gallery/3_b.jpg" data-fancybox-group="gallery" title=""><img src="data/images/gallery/3_s.jpg" alt="" /></a></li>
+
+			<li><a class="fancybox" href="data/images/gallery/4_b.jpg" data-fancybox-group="gallery" title=""><img src="data/images/gallery/4_s.jpg" alt="" /></a></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		 *  Simple image gallery. Uses default settings
+		 */
+		$('.fancybox').fancybox();
+	});
+	</script>
+
+</body>
+</html>

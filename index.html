@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>ABC RUBIKS</title>
+
+	<meta name="viewport" content="width=990" />	
+	
+	<link rel="stylesheet" media="all" href="data/styles/reset.css">
+	<link rel="stylesheet" media="all" href="data/styles/main.css">
+
+	<script type="text/javascript" src="data/scripts/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="data/scripts/dat.gui.js"></script>
+	<script type="text/javascript" src="data/scripts/howler.js"></script>
+	<script type="text/javascript" src="data/scripts/abcrubiks.js"></script>
+	<script type="text/javascript" src="data/scripts/bowser.min.js"></script>
+	<script type="text/javascript" src="data/scripts/main.js"></script>
+</head>
+
+<body>
+
+	<nav>
+		<ul>
+			<li><a href="about.html">About</a></li>
+			<li><a href="type-specimen.html">Type Specimen</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="credits.html">Credits</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<!-- <li><a href=""><img src="data/images/twitter.gif" alt="Twitter" /></a></li>
+			<li><a href=""><img src="data/images/facebook.gif" alt="Facebook" /></a></li> -->
+		</ul>
+		<a id="sendYourMessageButton" class="submit">Send Your Message</a>
+	</nav>	
+
+
+	<div id="sendYourMessageWrapper">
+		<div id="sendYourMessageForm">
+			<div class="border">
+				<a class="close"><img src="data/images/x.gif"></a>
+				<form class="clearfix">
+					<input type="email" required id="friendEmail" name="friendEmail" placeholder="Friend’s email" />
+					<input type="email" required id="yourEmail" name="yourEmail" placeholder="Your email" />
+					<textarea id="subject" name="subject" rows="4">Here’s a message I created for you on abcrubiks.com. Check it out!</textarea>
+					<input type="submit" value="Send" class="submit" />
+				</form>
+			</div>
+		</div>
+		<div id="sendYourMessageFill">&nbsp;</div>
+	</div>
+
+	<div id="userPrompt"><p></p></div>
+
+	<div id="userLoader"></div>
+		
+	<div class="wrapper message">
+
+		<div id="message">
+			<div class="sprite-a"></div>
+			<div class="sprite-b"></div>
+			<div class="sprite-c"></div>
+			<div class="sprite"></div>
+			<div class="sprite-r"></div>
+			<div class="sprite-u"></div>
+			<div class="sprite-b"></div>
+			<div class="sprite-i"></div>
+			<div class="sprite-k"></div>
+			<div class="sprite-s"></div>
+		</div>
+		
+
+	</div>
+
+</body>
+</html>

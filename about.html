@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>ABOUT - ABC RUBIKS</title>
+
+	<meta name="viewport" content="width=960" />	
+	
+	<link rel="stylesheet" media="all" href="data/styles/reset.css">
+	<link rel="stylesheet" media="all" href="data/styles/main.css">
+
+	<script type="text/javascript" src="data/scripts/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="data/scripts/jquery.cycle.all.js"></script>
+</head>
+
+<body>
+
+	<nav>
+		<ul>
+			<li class="active"><a href="about.html">About</a></li>
+			<li><a href="type-specimen.html">Type Specimen</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="credits.html">Credits</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<!-- <li><a href=""><img src="data/images/twitter.gif" alt="Twitter" /></a></li>
+			<li><a href=""><img src="data/images/facebook.gif" alt="Facebook" /></a></li> -->
+		</ul>
+		<a id="sendYourMessageButton" href="index.html" class="submit grey">Back To Message</a>
+	</nav>
+
+	<div class="wrapper">
+		<img src="data/images/about.gif" alt="About" class="header" />
+		<p><em>abc rubiks</em> is a kinetic typeface created through a stop-motion photography technique. All of the visuals and sounds are formed entirely from real Rubik’s cubes. Staying true to creator Erno Rubik’s design, the typeface combines both form and function to showcase the essence of the cube - from its shape, to its motion, to its colorful design. Through this typeface, we strive to promote the practice of cubing through the traditional art of typography.</p>
+		<p class="links"><a id="prev-btn">prev</a> / <a id="next-btn">next</a> (<span id="slideshow-count">1</span> / <span id="slideshow-total">4</span>)</p>
+		<ul id="slideshow">
+			<li>
+				<img src="data/images/making-1.jpg">
+				<p>Using a 2D design schematic, the three planes of the Rubik’s cube were used to create each character.</p>
+			</li>
+			<li>
+				<img src="data/images/making-2.jpg">
+				<p>A single Rubik’s cube was attached to a wooden dowel and photographed against a green screen. Just like a real Rubik’s cube, each of the six sides was designated with its own unique color.</p>
+			</li>
+			<li>
+				<img src="data/images/making-3.jpg">
+				<p>The glow of the typeface was created through the use of a black light and fluorescent stickers.</p>
+			</li>
+			<li>
+				<img src="data/images/making-4.jpg">
+				<p>Using a stop-motion photography technique, thousands of still images were combined into one seamless animation.</p>
+			</li>
+		</ul>
+
+		<div class="clearfix"></div>
+	</div>
+
+	<script type="text/javascript">
+	
+	$('#slideshow').cycle({ 
+		fx:     'fade', 
+		speed:  'fast', 
+		timeout: 0, 
+		next:   '#next-btn', 
+		prev:   '#prev-btn',
+		containerResize: 0,
+		
+		after: function(currSlideElement, nextSlideElement, options, forwardFlag){
+			var currentIndex = options.currSlide+1;
+			$("#slideshow-count").html(currentIndex);
+			$("#slideshow-total").html(options.slideCount);
+		}
+	});
+	</script>
+
+</body>
+</html>
